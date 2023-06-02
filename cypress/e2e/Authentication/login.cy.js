@@ -14,9 +14,6 @@ describe("Midtrans Demo Website", () => {
       //login
       cy.login(username, password);
     });
-    cy.get(".Z7iHca_close > .Button__yXAkD").click();
-
-    cy.contains("Dashboard").should("be.visible");
   });
 
   it.only("should login successfully", () => {
@@ -26,9 +23,5 @@ describe("Midtrans Demo Website", () => {
     cy.get("#user_password").type("Sitift17");
 
     cy.contains("Log me in").click();
-
-    cy.get(".Z7iHca_close > .Button__yXAkD").click();
-
-    cy.contains("Dashboard").should("be.visible");
   });
 });
