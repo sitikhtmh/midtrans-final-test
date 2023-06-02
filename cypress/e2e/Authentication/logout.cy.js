@@ -12,11 +12,11 @@ describe("Midtrans Demo Website", () => {
 
     cy.contains("Log me in").click();
 
-    cy.get('.Z7iHca_close > .Button__yXAkD').click();
-    cy.get('.tjr-avatar').click();
-    cy.get('.button_to > .tjr-btn').click();
+    cy.get(".Z7iHca_close > .Button__yXAkD").click();
+    cy.get(".tjr-avatar").click();
+    cy.get(".button_to > .tjr-btn").click();
 
     //Assertion
-    cy.get('.l-logo').should('be.visible')
+    cy.get(".l-logo").should("be.visible");
   });
 });
